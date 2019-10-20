@@ -1,4 +1,4 @@
-//decalring values
+//Decalring values
 const lib = {
   e:1, a:1, i:1, o:1, n:1, r:1, t:1, l:1, s:1, u:1,
   d:2, g:2,
@@ -9,6 +9,7 @@ const lib = {
   q:10, z:10
 }
 
+//Identifying each character score based on word entered
 const calcScore = (text) => {
   let score = 0;
   text = text.toLowerCase();
@@ -17,19 +18,21 @@ const calcScore = (text) => {
   return score;
 }
 
+//Sum of character scores
 const score = (word) => {
   let tscore = 0;
   tscore = calcScore(word);
   return tscore;
 }
 
+//Displaying score
 window.onload = function(){
   let input = document.getElementById("input");
   let submit = document.getElementById("test");
   let output = document.getElementById("output");
   submit.onclick = function() {
     if (input.value != "") {
-      output.innerHTML = "Scrabble Score: " + score(input.value)
+      output.innerHTML = "Score: " + score(input.value)
       } else {
           output.innerHTML = "Please enter a word"
       }

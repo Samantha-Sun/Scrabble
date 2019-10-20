@@ -1,4 +1,17 @@
 body {
     margin: 0;
-    background-color: rgb(191, 196, 185);
+  }
+
+.navbar-default {
+background-color: #ffc832;
+  }
+.navbar {
+    min-height: 100px;
+  }
+
+p {
+    font-size: 200%;
+  }
+label {
+    font-size: 150%;
   }
